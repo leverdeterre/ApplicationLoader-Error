@@ -17,7 +17,7 @@ A lot of errors can occurs during Application submission !
 **ERROR ITMS-90164**<br>
 - Message: Invalid Code Signing Entitlements. The entitlements in your app bundle signature do not match the ones that are contained in the provisioning profile. According to the provisioning profile, the bundle contains a key value that is not allowed: 'TEAMID.com.Company.CompanyApp' for the key 'application-identifier' in 'Payload/CompanyApp.app/CompanyApp<br>
 - Solution:??
-- 
+
 **ERROR ITMS-90474**<br>
 - Message: Bundle Invalid. iPad Multitasking support requires there orientations: 'UIInterfaceOrientationPortrait,UIIinterfaceOrientationPortraitUpsideDown,UIInterfaceOrientationLandscapeLeft,UIInterfaceOrientationLandscapeRight'. Found 'UIInterfaceOrientationPortrait' in bundle.<br>
 - Solution: info.plist need the configuration of "Requires full screen"
