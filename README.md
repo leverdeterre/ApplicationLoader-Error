@@ -3,9 +3,13 @@ A lot of errors can occurs during Application submission !
 
 
 **ERROR ITMS-9000**<br>
-- Message:The bundle 'com.xxxxxa' at bundle path 'Payload/xxxx.app' is not signed using an Apple submission certificate." at SoftwareAssets/SoftwareAsset (MZItmspSoftwareAssetPackage)<br>
+- Message: The bundle 'com.xxxxxa' at bundle path 'Payload/xxxx.app' is not signed using an Apple submission certificate." at SoftwareAssets/SoftwareAsset (MZItmspSoftwareAssetPackage)<br>
 - Solution:??
 
+**ERROR ITMS-90035**<br>
+- Message: Invalid Signature. Invalid signature (code or signature have been modified). Make sure you have signed your application with a distribution certificate, not an ad hoc certificate or a development certificate. Verify that the code signing settings in Xcode are correct at the target level (which override any values at the project level). Additionally, make sure the bundle you are uploading was built using a Release target in Xcode, not a Simulator target. If you are certain your code signing settings are correct, choose "Clean All" in Xcode, delete the "build" directory in the Finder, and rebuild your release target. For more information, please consult https://developer.apple.com/library/ios/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html
+- Solution:??
+        
 **ERROR ITMS-90046**<br>
 - Message: Invalid Code Signing Entitlements. Your application bundle's signature contains code signing entitlements that are not supported on iOS. Specifically, value '*' for key 'com.apple.developer.associated-domains' in 'Payload/appomcom.app/appomcom' is not supported. <br>
 - Solution:??
@@ -16,6 +20,10 @@ A lot of errors can occurs during Application submission !
 
 **ERROR ITMS-90164**<br>
 - Message: Invalid Code Signing Entitlements. The entitlements in your app bundle signature do not match the ones that are contained in the provisioning profile. According to the provisioning profile, the bundle contains a key value that is not allowed: 'TEAMID.com.Company.CompanyApp' for the key 'application-identifier' in 'Payload/CompanyApp.app/CompanyApp<br>
+- Solution:??
+
+**ERROR ITMS-90206**<br>
+- Message: Invalid Bundle. The bundle at 'MyApp.app/PlugIns/MyAppShare.appex' contains disallowed file 'Frameworks'.
 - Solution:??
 
 **ERROR ITMS-90474**<br>
