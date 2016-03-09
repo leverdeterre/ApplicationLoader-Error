@@ -6,6 +6,14 @@ A lot of errors can occurs during Application submission !
 - Message: The bundle 'com.xxxxxa' at bundle path 'Payload/xxxx.app' is not signed using an Apple submission certificate." at SoftwareAssets/SoftwareAsset (MZItmspSoftwareAssetPackage)<br>
 - Solution:??
 
+**ERROR ITMS-90017**<br>
+- Message: this bundle is invalid.the IPA format requires a top-level directory named Payload, containing only a.app bundle and optional plugins in a PLUGINS directory.
+- Solution:??
+
+**ERROR ITMS-90023**<br>
+- Message: Missing required icon file.  The bundle does not contain an app icon for iPad of exactly '72x72' pixels, in .png format for iOS versions < 7.0.
+- Solution:??
+
 **ERROR ITMS-90035**<br>
 - Message: Invalid Signature. Invalid signature (code or signature have been modified). Make sure you have signed your application with a distribution certificate, not an ad hoc certificate or a development certificate. Verify that the code signing settings in Xcode are correct at the target level (which override any values at the project level). Additionally, make sure the bundle you are uploading was built using a Release target in Xcode, not a Simulator target. If you are certain your code signing settings are correct, choose "Clean All" in Xcode, delete the "build" directory in the Finder, and rebuild your release target. For more information, please consult https://developer.apple.com/library/ios/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html
 - Solution:??
