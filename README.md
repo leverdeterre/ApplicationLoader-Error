@@ -16,6 +16,10 @@ A lot of errors can occurs during Application submission !
 
 **ERROR ITMS-90098**<br>
 - Message: This bundle is invalid. The key UIRequiredDeviceCapabilities contains value 'arm64' which is incompatible with the MinimumOSVersion value of '8.0'.<br>
+- Solution: The Info.plist of the app may no values for the key "UIRequiredDeviceCapabilities" contain "that would prevent the opening of this app on iOS devices. For more information, see the information on the key "UIRequiredDeviceCapabilities".
+
+**ERROR ITMS-90125**<br>
+- Message: the binary is invalid. the encryption info in the lc_encryption_info load command is either missing or invalid, or the binary is already encrypted
 - Solution:??
 
 **ERROR ITMS-90164**<br>
