@@ -28,6 +28,10 @@ A lot of errors can occurs during Application submission !
 - Message: Invalid Code Signing Entitlements. Your application bundle's signature contains code signing entitlements that are not supported on iOS. Specifically, value '*' for key 'com.apple.developer.associated-domains' in 'Payload/appomcom.app/appomcom' is not supported. <br>
 - Solution:??
 
+**ERROR ITMS-90096**<br>
+- Message: Your binary is not optimized for iPhone 5 - New iPhone apps and app updates submitted must support the 4-inch display on iPhone 5 and must include a launch image referenced in the Info.plist under UILaunchImages with a UILaunchImageSize value set to {320, 568}. Launch images must be PNG files and located at the top-level of your bundle, or provided within each .lproj folder if you localize your launch images. Learn more about iPhone 5 support and app launch images by reviewing the 'iOS Human Interface Guidelines' at 'https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/IconsImages/IconsImages.html#//apple_ref/doc/uid/TP40006556-CH14-SW5' and the 'iOS App Programming Guide' at 'https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/App-RelatedResources/App-RelatedResources.html#//apple_ref/doc/uid/TP40007072-CH6-SW12'.
+- Solution: Read the documentation and add missing ressources
+
 **ERROR ITMS-90098**<br>
 - Message: This bundle is invalid. The key UIRequiredDeviceCapabilities contains value 'arm64' which is incompatible with the MinimumOSVersion value of '8.0'.<br>
 - Solution: The Info.plist of the app may no values for the key "UIRequiredDeviceCapabilities" contain "that would prevent the opening of this app on iOS devices. For more information, see the information on the key "UIRequiredDeviceCapabilities".
