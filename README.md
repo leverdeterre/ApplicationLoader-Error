@@ -10,6 +10,10 @@ A lot of errors can occurs during Application submission !
 - Message: this bundle is invalid.the IPA format requires a top-level directory named Payload, containing only a.app bundle and optional plugins in a PLUGINS directory.
 - Solution:??
 
+**ERROR ITMS-90022**<br>
+- Message : Missing required icon file. The bundle does not contain an app icon for iPhone / iPod Touch of exactly '120x120' pixels, in .png format for iOS versions >= 7.0.
+- Solution: Add missing icons in your appiconset
+
 **ERROR ITMS-90023**<br>
 - Message: Missing required icon file.  The bundle does not contain an app icon for iPad of exactly '72x72' pixels, in .png format for iOS versions < 7.0.
 - Solution:??
