@@ -15,8 +15,10 @@ A lot of errors can occurs during Application submission !
 - Solution: Add missing icons in your appiconset
 
 **ERROR ITMS-90023**<br>
-- Message: Missing required icon file.  The bundle does not contain an app icon for iPad of exactly '72x72' pixels, in .png format for iOS versions < 7.0.
-- Solution:??
+- Message : Missing required icon file.  The bundle does not contain an app icon for iPad of exactly '72x72' pixels, in .png format for iOS versions < 7.0.
+- Message : Missing required icon file. The bundle does not contain an app icon for iPad of exactly '76x76' pixels, in .png format for iOS versions >= 7.0
+- Message: Missing required icon file. The bundle does not contain an app icon for iPad of exactly '167x167' pixels, in .png format .
+- Solution: Add missing icons in your appiconset
 
 **ERROR ITMS-90035**<br>
 - Message: Invalid Signature. Invalid signature (code or signature have been modified). Make sure you have signed your application with a distribution certificate, not an ad hoc certificate or a development certificate. Verify that the code signing settings in Xcode are correct at the target level (which override any values at the project level). Additionally, make sure the bundle you are uploading was built using a Release target in Xcode, not a Simulator target. If you are certain your code signing settings are correct, choose "Clean All" in Xcode, delete the "build" directory in the Finder, and rebuild your release target. For more information, please consult https://developer.apple.com/library/ios/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html
