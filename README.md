@@ -88,3 +88,11 @@ Add UIRequiresFullScreen key and value true/false depending on your app multitas
 **ERROR ITMS-90502**<br>
 - Message: Invalid Bundle. Apps that only contain the arm64 slice must also have 'arm64' in the list of UIRequiredDeviceCapabilities in Info.plist."<br>
 - Solution:??
+
+**ERROR ITMS-90640**<br>
+- Message: Invalid Info.plist value. Invalid Info.plist value. The value for key UIApplicationShortcutWidget must be the bundle identifier of a Today extension in the app.<br>
+- Solution:Change the value of UIApplicationShortcutWidget in your info.plist 
+```xml
+<key>UIApplicationShortcutWidget</key>
+<string>YOUR_WIDGET_BUNDLE_ID</string>
+```
