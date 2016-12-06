@@ -54,7 +54,9 @@ Solution: The Info.plist of the app may no values for the key "UIRequiredDeviceC
 
 **ERROR ITMS-90125**<br>
 - Message: the binary is invalid. the encryption info in the lc_encryption_info load command is either missing or invalid, or the binary is already encrypted
-- Solution:??
+```
+Solution: ??
+```
 
 **ERROR ITMS-90164**<br>
 - Message: Invalid Code Signing Entitlements. The entitlements in your app bundle signature do not match the ones that are contained in the provisioning profile. According to the provisioning profile, the bundle contains a key value that is not allowed: 'TEAMID.com.Company.CompanyApp' for the key 'application-identifier' in 'Payload/CompanyApp.app/CompanyApp<br>
@@ -66,6 +68,13 @@ Solution: ??
 - Message: Invalid Bundle. The bundle at 'MyApp.app/PlugIns/MyAppShare.appex' contains disallowed file 'Frameworks'.
 ```
 Solution: ??
+```
+
+**ERROR ITMS-90394**<br>
+- Message: "Missing Icon. The watch application 'XXXXX' is missing icon with name pattern 'XXX.png' ). Please visit https://developer.apple.com/watchkit/ for more information."
+
+```
+Solution: Add the missing icon in your assets 
 ```
 
 **ERROR ITMS-90474**<br>
