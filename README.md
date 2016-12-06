@@ -70,6 +70,13 @@ Solution: ??
 Solution: ??
 ```
 
+**ERROR ITMS-90347**<br>
+- Message: "Bad bundle identifier. The bundle identifier 'com.jmo.touchup.today.proxymity' of the application extension XXX.app/PlugIns/YYYY.appex should start with the application's bundle identifier 'com.jmo.xxx' and not contain more than one period “.” after the application's bundle ID.""
+
+```
+Solution: Damned ! Your have to change your bundleId and generate your mobile provisionning ! 
+```
+
 **ERROR ITMS-90394**<br>
 - Message: "Missing Icon. The watch application 'XXXXX' is missing icon with name pattern 'XXX.png' ). Please visit https://developer.apple.com/watchkit/ for more information."
 
