@@ -1,18 +1,25 @@
 # ApplicationLoader-Error
 A lot of errors can occurs during Application submission !
 
+**ERROR ITMS-4238**<br>
+- Message: Redundant Binary Upload
+ ```
+ Solution: change the build version or app version
+ ```
 
 **ERROR ITMS-9000**<br>
 - Message: The bundle 'com.xxxxxa' at bundle path 'Payload/xxxx.app' is not signed using an Apple submission certificate." at SoftwareAssets/SoftwareAsset (MZItmspSoftwareAssetPackage)<br>
 ```
-Solution: ??
+Solution: Are you sure to use the good certificate to sign?
 ```
 
 **ERROR ITMS-90017**<br>
 - Message: this bundle is invalid.the IPA format requires a top-level directory named Payload, containing only a.app bundle and optional plugins in a PLUGINS directory.
 ```
-Solution: ??
-``` 
+Solution: Bad format ? Invalid structure?
+/Payload/a.app
+/Payload/Plugins
+```
 
 **ERROR ITMS-90022**<br>
 - Message : Missing required icon file. The bundle does not contain an app icon for iPhone / iPod Touch of exactly '120x120' pixels, in .png format for iOS versions >= 7.0.
@@ -33,7 +40,7 @@ Solution: Add missing icons in your appiconset
 ```
 Solution: ??
 ```
-        
+
 **ERROR ITMS-90046**<br>
 - Message: Invalid Code Signing Entitlements. Your application bundle's signature contains code signing entitlements that are not supported on iOS. Specifically, value '*' for key 'com.apple.developer.associated-domains' in 'Payload/appomcom.app/appomcom' is not supported. <br>
 ```
@@ -74,14 +81,14 @@ Solution: ??
 - Message: "Bad bundle identifier. The bundle identifier 'com.jmo.touchup.today.proxymity' of the application extension XXX.app/PlugIns/YYYY.appex should start with the application's bundle identifier 'com.jmo.xxx' and not contain more than one period “.” after the application's bundle ID.""
 
 ```
-Solution: Damned ! Your have to change your bundleId and generate your mobile provisionning ! 
+Solution: Damned ! Your have to change your bundleId and generate your mobile provisionning !
 ```
 
 **ERROR ITMS-90394**<br>
 - Message: "Missing Icon. The watch application 'XXXXX' is missing icon with name pattern 'XXX.png' ). Please visit https://developer.apple.com/watchkit/ for more information."
 
 ```
-Solution: Add the missing icon in your assets 
+Solution: Add the missing icon in your assets
 ```
 
 **ERROR ITMS-90474**<br>
@@ -107,7 +114,7 @@ Add UIRequiresFullScreen key and value true/false depending on your app multitas
 
 **ERROR ITMS-90640**<br>
 - Message: Invalid Info.plist value. Invalid Info.plist value. The value for key UIApplicationShortcutWidget must be the bundle identifier of a Today extension in the app.<br>
-- Solution:Change the value of UIApplicationShortcutWidget in your info.plist 
+- Solution:Change the value of UIApplicationShortcutWidget in your info.plist
 ```xml
 <key>UIApplicationShortcutWidget</key>
 <string>YOUR_WIDGET_BUNDLE_ID</string>
