@@ -119,3 +119,8 @@ Add UIRequiresFullScreen key and value true/false depending on your app multitas
 <key>UIApplicationShortcutWidget</key>
 <string>YOUR_WIDGET_BUNDLE_ID</string>
 ```
+**WARNING ITMS-90703**<br>
+- Message: "Deprecated Xcode Build. Due to resolved app archives issues, we will be deprecating Xcode 8.3 on May 10, 2017, at which time app archives built with 8.3 will no longer be accepted by the App Store. Download Xcode 8.3.2 or newer, rebuild your app and resubmit."
+```xml
+Migrate your project to Xcode 8.3.2, compile, cross the fingers and upload
+```
