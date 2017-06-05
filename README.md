@@ -4,7 +4,7 @@ A lot of errors can occurs during Application submission !
 **ERROR ITMS-4238**<br>
 - Message: Redundant Binary Upload
  ```
- Solution: change the build version or app version
+ Solution: change the build version or app version in your info.plist CFBundleVersion
  ```
 
 **ERROR ITMS-9000**<br>
