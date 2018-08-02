@@ -47,6 +47,12 @@ Solution: ??
 Solution: ??
 ```
 
+**ERROR ITMS-90062**<br>
+- Message: This bundle is invalid. The value for key CFBundleShortVersionString [1.1.0] in the Info.plist file must contain a higher version than that of the previously approved version [1.1.0].
+```
+Solution: You probably have an app version that was approved for the official app store, you cannot upload a build with the same version to TestFlight. Increment CFBundleShortVersionString version.
+```
+
 **ERROR ITMS-90096**<br>
 - Message: Your binary is not optimized for iPhone 5 - New iPhone apps and app updates submitted must support the 4-inch display on iPhone 5 and must include a launch image referenced in the Info.plist under UILaunchImages with a UILaunchImageSize value set to {320, 568}. Launch images must be PNG files and located at the top-level of your bundle, or provided within each .lproj folder if you localize your launch images. Learn more about iPhone 5 support and app launch images by reviewing the 'iOS Human Interface Guidelines' at 'https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/IconsImages/IconsImages.html#//apple_ref/doc/uid/TP40006556-CH14-SW5' and the 'iOS App Programming Guide' at 'https://developer.apple.com/library/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/App-RelatedResources/App-RelatedResources.html#//apple_ref/doc/uid/TP40007072-CH6-SW12'.
 ```
